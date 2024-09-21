@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6b6b;
+}
+
+.restricted {
+    display: none;
+    margin-top: 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ff6b6b;
+}
+
+/* Gradient background and parallax effect */
+body {
+    background: linear-gradient(120deg, #f3f4f6, #e2e8f0);
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.cta-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #ff6b6b;
+}
